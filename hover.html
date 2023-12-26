@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cube Hover</title>
+
+        <style>
+            body {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                margin: 0;
+                background-color: black;
+            }
+            .cube {
+                height: 200px;
+                width: 200px;
+                background-color: aliceblue;
+                border-radius: 50%;
+                filter: blur(20px);
+                transition-duration: 0.25s;
+            }
+            .cube:hover {
+                filter: blur(0px);
+                transition: filter 1s, border-radius 3s 1s;
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="cube"></div>
+    </body>
+</html>
