@@ -20,12 +20,13 @@
                 background-color: aliceblue;
                 border-radius: 50%;
                 filter: blur(20px);
-                transition-duration: 0.25s;
+                transition-duration: 3s;
             }
             .cube:hover {
                 filter: blur(0px);
-                transition: filter 1s, border-radius 3s 1s;
+                transition: filter 1s, border-radius 3s 1s ease-out;
                 border-radius: 30px;
+                cursor: pointer;
             }
         </style>
     </head>
